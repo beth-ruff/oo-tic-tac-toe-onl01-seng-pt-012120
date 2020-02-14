@@ -67,7 +67,7 @@ end
 
   def turn
     puts "Please choose a number 1-9:"
-    user_input = STDIN.gets.chomp
+    user_input = gets.chomp
     index = input_to_index(user_input)
       if valid_move?(index)
         move(index, current_player)
@@ -85,7 +85,7 @@ end
     
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combo 
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "0"
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
       return win_combo 
     end
     }
